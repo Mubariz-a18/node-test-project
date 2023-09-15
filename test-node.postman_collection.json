@@ -1,0 +1,193 @@
+{
+	"info": {
+		"_postman_id": "b597ceec-b298-436b-8714-bb184a042980",
+		"name": "test-node",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19452878"
+	},
+	"item": [
+		{
+			"name": "post",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiZDEyN2UwODEtMDA1NC00NTdmLTg4MzYtZDUzZjcxMGJjMDRkIiwiaWF0IjoxNjk0NzkxOTc5fQ.uUB_XID6jqwz0yROgM2cFTXDHfSAwJUw99FiyiklWeA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_name\":\"testuser8\",\r\n    \"user_email\":\"userEmail8@gmail.com\",\r\n    \"user_password\":\"password123\",\r\n    \"user_image\":\"https://imageUrl.com\",\r\n    \"total_orders\":12\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/insert",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"insert"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/image/351a4e46-d0a4-46fa-b32e-31dca75c5ffc",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"image",
+						"351a4e46-d0a4-46fa-b32e-31dca75c5ffc"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get Details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/details/d7fb5cec-c468-46e6-b4aa-6f80cd853999",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"details",
+						"d7fb5cec-c468-46e6-b4aa-6f80cd853999"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_name\":\"updateTestUser\",\r\n    \"user_email\":\"updateEmail@gmail.com\",\r\n    \"user_password\":\"password456\",\r\n    \"user_image\":\"https://imageUrl1.com\",\r\n    \"total_orders\":121\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/update/1e29767c-3b83-4f27-b08e-c805611a47ab",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"update",
+						"1e29767c-3b83-4f27-b08e-c805611a47ab"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/delete/d7fb5cec-c468-46e6-b4aa-6f80cd853999",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"delete",
+						"d7fb5cec-c468-46e6-b4aa-6f80cd853999"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_email\":\"userEmail7@gmail.com\",\r\n    \"user_password\":\"password123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_name\":\"testuser8\",\r\n    \"user_email\":\"admin@gmail.com\",\r\n    \"user_password\":\"admin123\",\r\n    \"user_image\":\"https://imageUrl.com\",\r\n    \"total_orders\":12\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
